@@ -14,9 +14,6 @@ def instagram_pipeline(username: str):
 
     process_posts()
 
-    print("Pipeline completed successfully")
-
 
 if __name__ == "__main__":
-
     instagram_pipeline("nike")
