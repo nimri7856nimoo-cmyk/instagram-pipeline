@@ -26,12 +26,12 @@ def process_posts():
         for post in latest_posts:
 
             cleaned_post = {
-                "username": post.get("ownerUsername"),
-                "caption": post.get("caption"),
-                "likes": post.get("likesCount"),
-                "timestamp": post.get("timestamp"),
-                "image_url": post.get("displayUrl")
-            }
+    "username": profile.get("username") or profile.get("ownerUsername"),
+    "caption": post.get("caption"),
+    "likes": post.get("likesCount", 0),
+    "timestamp": post.get("timestamp"),
+    "image_url": post.get("displayUrl")
+}
 
             processed.append(cleaned_post)
 
