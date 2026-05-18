@@ -4,3 +4,11 @@ __pycache__/
 *.pyc
 .idea/
 .vscode/
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+.prefect/
+mongodb_data/
+qdrant_storage/
